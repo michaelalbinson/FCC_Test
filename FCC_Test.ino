@@ -28,7 +28,7 @@ void setup() {
   // do nothing until the system on pin is pressed
   do {
     delay(50);
-  while (dread(SYS_ON_PIN) != 1);
+  } while (dread(SYS_ON_PIN) != 1);
 }
 
 void loop() {
@@ -71,7 +71,7 @@ void doff(int pin) {
 // Read from a digital pin. Does not work if <pin> is not the system on pin
 int dread(int pin) {
   if (pin != SYS_ON_PIN)
-    return;
+    return 0 ;
     
   return digitalRead(pin);
 }
