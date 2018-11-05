@@ -43,6 +43,8 @@ void loop() {
         don(i + 9); // A1 -> D10, A2 -> D11, A3 -> D12, A4 -> D13
     }
   }
+  delay(100);
+  allOff(); 
 }
 
 // HELPERS
